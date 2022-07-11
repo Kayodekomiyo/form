@@ -1,0 +1,117 @@
+<html> 
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="PHP,CSS">
+<meta name="description" content="ID's">
+<meta name="author" content="kayode komiyo">
+<meta http-equiv="refresh" content="1000">
+<meta name="viewport" content="width-device-width,initial-scale=1.0">
+</head>
+<body style="background-color:blue";>
+
+
+<h2>HTML Forms</h2>
+
+<form action="" target="_self" method="get" autocomplete="on" novalidate>
+<label for="fname">First name: </label><br>
+<input type="text" id="fname" name="fname" value="" disabled><br> 
+<label for="lname"> Last name:</label><br>
+<input type="text" id="lname" name="lname" value=""><br><br>
+<input type="submit" value="submit">
+</form>
+
+<p>If you click the "submit" button, the form-data will be sent to a page called +/action_page.php".<p><br>
+
+<h2>Radio Buttons</h2><br>
+<p>The <span style="color:red">input type="radio"</span>defines a radio button.</p><br>
+
+<p>Radio buttons let a user select ONE of a limited number of choices.</p><br>
+
+<h3>Example</h3>
+<p>A form with a radio button</p><br><hr>
+
+<p>Choose your favourite Web language:</p>
+
+<form>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="javascript">
+<label for="javascript">Javascript</label></form><br>
+
+<h2>Checkboxes</h2>
+<p>The <span style="color:red"><input type="checkbox"></span>defines a <strong>checkbox.</strong></p>
+<p>Checkboxes helps a user to select ZERO or MORE option of a limited number of choices.</p>
+<h3>Example</h3>
+<p>A box with checkboxes:</p>
+<form>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2">I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">I have a boat</label></form><br>
+
+<h2>The select Element</h2>
+
+<p>The select element defines a drop down-list:</p>
+
+<form action="">
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+<option value="volvo">Volvo</option>
+<option value="Saab">Saab</option>
+<option value="Fiat">Fiat</option>
+<option value="Audi" selected>Audi</option>
+</select>
+<input type="submit">
+</form>
+<b>The Button Element</b>
+<p>The button element defines a clickable button:<p><br>
+<button type="button" onclick="document.location='HTML learn 2.php'">Click Me!</button><br>
+<button type="button" onclick="alert('I am the best!')">Click Me!</button><br>
+<b>The fieldset and legend Elements</b>
+<p>The <b>fieldset</b> element is used to group related data in a form.<p>
+<p>The <b>legend</b> element defines a caption for the fieldset element.</p><br>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" maxlength="5" size="25"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form><br>
+<b>The Data List Element</b>
+<p>The <b>Datalist</b> element specifies a list of pre-defined options for an <b>Input</b> element.</p>
+<p>The list attribute of the <b>Input</b> element, must refer to the id attribute of the <b>datalist</b> element.
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form><br>
+<b>The Output Element</b>
+<p>The <b>output</b> element represents the result of a calculation (like one performed by a script).</p>
+
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
